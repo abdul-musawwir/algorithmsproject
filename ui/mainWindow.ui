@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QComboBox" name="dynamicAlgos">
+      <item>
+       <property name="text">
+        <string>Longest Common Subsequence</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Shortest Common Supersequence</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Levenshtein Distance (edit-distance)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Longest Increasing Subsequence</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Matrix Chain Multiplication (Order finding /paranthesization)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0-1-knapsack-problem</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Partition-problem</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rod Cutting Problem</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Coin-change-making-problem</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Word Break Problem</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="sourceCodeLable">
+      <property name="text">
+       <string>Source Code</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="selectfile">
+      <property name="text">
+       <string>select file</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="selectedFileName">
+      <property name="text">
+       <string>fileName</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="5">
+     <widget class="QTextEdit" name="sorceCodeBox">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Alfmkmfskmk&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="5">
+     <widget class="QTextEdit" name="inputFileBox">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Alfmkmfskmk&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="inputFileLable">
+      <property name="text">
+       <string>Input File</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="Execute">
+      <property name="text">
+       <string>Execute</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <widget class="QMenu" name="menuDevelopers">
+     <property name="title">
+      <string>Developers</string>
+     </property>
+     <addaction name="actionMuhammadUsama"/>
+     <addaction name="actionAbdul_Musawwir"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuDevelopers"/>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMuhammadUsama">
+   <property name="text">
+    <string>Muhammad Usama K180154</string>
+   </property>
+  </action>
+  <action name="actionAbdul_Musawwir">
+   <property name="text">
+    <string>Abdul Musawwir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
